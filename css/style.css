@@ -1,0 +1,181 @@
+:root
+{
+    --darkBlue: #2c3e50;
+    --darkBlue-300: #34495e;
+    --red-100: #e74c3c;
+    --orange-100: #e67e22
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header
+{
+    background-color: var(--darkBlue);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1
+{
+    font-size: 2em;
+    color: white;
+}
+.nav ul
+{
+    list-style: none;
+    display: flex;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0 10px;
+}
+
+
+
+
+.slider
+{
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    background-color: var(--darkBlue);
+    color: white;
+    gap: 35px;
+}
+.about-me h1
+{
+    font-size: 4em;
+}
+.about-me h3
+{
+    margin: 15px 0;
+}
+.about-me p
+{
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-me a
+{
+    text-decoration: none;
+    color: white;
+    background-color: var(--orange-100);
+    display: inline-block;
+    padding: 10px 20px;
+}
+.slider-pic
+{
+    min-width: 30%;
+    text-align: center;
+}
+
+.slider img
+{
+    width: 300px;
+    border: 5px solid var(--orange-100);
+}
+
+.card-body
+{
+    margin-top: 25px;
+    padding: 30px;
+    color: white;
+    background-color: var(--darkBlue);
+
+}
+.card
+{
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.personal-info-section img
+{
+    width: 250px;
+    border: 5px solid var(--orange-100);
+
+}
+
+.card-body h1
+{
+    font-size: 2.7em;
+}
+.card-body  h1 span
+{
+    color: var(--orange-100);
+}
+.personal-info-section h2
+{
+    margin: 10px 0;
+}
+.personal-info-section .personal-info
+{
+    margin-top: 20px;
+    display: flex;
+    line-height: 1.8;
+    gap: 40px;
+}
+.personal-info-section .personal-info span
+{
+    color: var(--orange-100);
+}
+#service div
+{
+    text-align: center;
+}
+#service div i,
+#contact i
+{
+    font-size: 2.5em;
+}
+#service h3,
+#contact h3
+{
+    margin: 15px 0;
+}
+.my-projects
+{
+    justify-content: center;
+}
+.my-projects img
+{
+    width: 100%;
+    border: 5px solid var(--orange-100);
+
+}
+#contact
+{
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 720px) {
+    .card{flex-wrap: wrap;}
+    .personal-info-section img{width: 100%;}
+    .desc{width: 100%;}
+    #contact div
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .slider{flex-wrap: wrap;}
+    .about-me{max-width: 100%; }
+    .slider-pic{width: 100%;}
+    .slider img{width: 100%;}
+}
